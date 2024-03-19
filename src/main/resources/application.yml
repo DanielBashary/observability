@@ -5,7 +5,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health #,metrics,prometheus
+        include: health
   otlp:
     tracing:
       endpoint: http://localhost:4318/v1/traces
