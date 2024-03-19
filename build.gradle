@@ -16,7 +16,14 @@ repositories {
 }
 
 dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-web"
+	implementation "org.springframework.boot:spring-boot-starter-webflux"
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation "org.springframework.boot:spring-boot-starter-actuator"
+	implementation "io.micrometer:micrometer-tracing-bridge-otel:1.1.6"
+	implementation "io.opentelemetry:opentelemetry-api:1.31.0"
+	implementation "io.opentelemetry:opentelemetry-exporter-otlp:1.31.0"
+	implementation "io.opentelemetry:opentelemetry-exporter-common:1.31.0"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

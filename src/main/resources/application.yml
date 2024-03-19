@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: tracing
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health #,metrics,prometheus
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces
+  tracing:
+    sampling:
+      probability: 1.0
